@@ -3,7 +3,7 @@
 
 const Container = (props) => {
     return (
-        <div className=" w-[90%] mx-auto">
+        <div className=" w-[88vw] mx-auto">
             {props.children}
         </div>
     );
