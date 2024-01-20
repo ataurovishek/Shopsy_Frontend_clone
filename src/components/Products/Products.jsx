@@ -1,15 +1,27 @@
+import Container from "../container/Container";
+import BestProducts from "./BestProducts";
+import ProductCardInfo from "./ProductCardInfo";
 import ProductsCard from "./ProductsCard";
 
 const Products = () => {
+
+    
+    
+    const ProductCardHeading = {
+        title:'Top Selling Products for you',
+        Heading:'Products',
+        Description:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi'
+    }
+
+
     return (
-        <div>
-            <div className="flex flex-col items-center mt-[3rem]">
-                <p className="text-[#fea928] text-sm">Top Selling Products for you</p>
-                <h5 className="font-bold text-3xl">Products</h5>
-                <p className="text-[12px] text-[#8a8a89]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi</p>
+        <Container>
+            <div className="flex flex-col items-center mt-[3rem] text-center">
+              <ProductCardInfo info={ProductCardHeading}/>
             </div>
             <ProductsCard />
-        </div>
+            <BestProducts/>
+        </Container>
     );
 };
 

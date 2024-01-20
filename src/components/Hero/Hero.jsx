@@ -44,16 +44,16 @@ const Hero = () => {
     };
 
     return (
-        <div className="relative overflow-hidden min-h-[700px] bg-gray-100">
+        <div className="relative overflow-hidden min-h-[650px] w-full bg-gray-100">
 
-            <div className=" absolute w-[700px] h-[700px] bg-[#f8d6a4] top-[-330px] rounded-2xl right-[20px] rotate-45"></div>
+            <div className=" absolute w-[700px] h-[700px]  bg-[#f8d6a4] top-[-330px] rounded-2xl right-[20px] rotate-45"></div>
 
             <Container>
                 <Slider {...settings}>
 
                     {
                         sliderInfo.map(item =>
-                            <div key={item.id}>
+                            <div key={item.id} className='px-5 '>
 
                                 <div className="flex items-center justify-center gap-[5rem] pb-15 pt-[7.4rem]">
                                     <div className='w-[50%] flex flex-col items-start gap-3 pt-2'>
@@ -62,7 +62,7 @@ const Hero = () => {
                                         <button className='px-[15px] bg-[#fda726] py-2 text-[#fff] rounded-3xl text-[16px] font-semibold'>Order Now</button>
                                     </div>
 
-                                    <div className='w-[40%] '>
+                                    <div className='w-[45%] '>
                                         <img src={item.img} alt="" className='w-[80%]' />
                                     </div>
 
