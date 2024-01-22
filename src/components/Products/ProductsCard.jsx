@@ -21,7 +21,7 @@ const ProductsCard = () => {
             id: 2,
             img: image2,
             Title: 'Women western',
-            color: 'Reds',
+            color: 'Red',
             rating: 4.5,
         },
         {
@@ -54,14 +54,14 @@ const ProductsCard = () => {
             <div className="flex items-center justify-between mt-10 px-[5rem]">
                 {ProductsDetails.map(item => (
                     <div key={item.id} className="flex flex-col">
-                        <div className=" w-[9.4rem] h-56 rounded-md mb-5">
+                        <div className=" w-[9.4rem] h-56 rounded-md mb-3">
                             <img src={item.img} className="object-cover h-[100%] rounded-lg" alt="" />
                         </div>
-                        <h5 className="text-[15px] font-semibold">{item.Title}</h5>
-                        <p className="text-sm text-[#515151]">{item.color}</p>
+                        <h5 className="text-[16px] font-semibold">{item.Title}</h5>
+                        <p className="text-[14px] text-[#515151]">{item.color}</p>
 
                         <div className="flex items-center gap-1">
-                            <FaStar color="orange" />
+                            <FaStar color="orange" fontSize={14} />
                             <span>{item.rating}</span>
                         </div>
 
@@ -69,7 +69,7 @@ const ProductsCard = () => {
                 ))}
 
             </div>
-            <button onClick={() => alert(`This product is not available right now!`)} className="mt-14 bg-[#ea9a22] block mx-auto text-[#fff] font-xl text-md px-5 py-[4px] rounded-md">View All Button</button>
+            <button onClick={() => alert(`This product is not available right now!`)} className="mt-10 bg-[#ea9a22] block mx-auto text-[#fff] font-xl text-md px-5 py-[4px] rounded-md">View All Button</button>
         </Container>
     );
 };

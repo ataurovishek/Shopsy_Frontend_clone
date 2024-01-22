@@ -39,21 +39,20 @@ const BestProducts = () => {
 
     return (
         <Container>
-            <div className="flex flex-col ml-10">
+            <div className="flex flex-col ml-6 mt-8">
                 <ProductCardInfo info={ProductCardHeading} />
             </div>
 
-            <div className='flex items-center justify-between mx-[10rem] mt-7'>
+            <div className=' w-[77%] mx-auto flex items-center justify-between mt-7 '>
 
                 {
 
                     BestProducts.map(item => (
-                        <div key={item.id} className='w-36 flex flex-col items-center relative group'>
+                        <div key={item.id} className='w-[9.8rem] flex flex-col items-center group px-2'>
 
-                            <img src={item.img} alt=""  className='z-30 group-hover:scale-[1.1] ease-out duration-300'/>
+                            <img src={item.img} alt=""  className='z-30 w-[100%] group-hover:scale-[1.05] ease-out duration-300'/>
 
-
-                            <div className= 'group-hover:bg-[#262525] w-[20rem] h-[17rem]  absolute top-20 px-1 text-center flex flex-col justify-end z-10 rounded-3xl'>
+                            <div className= 'group-hover:bg-[#262525] w-[20rem] h-[17rem] translate-y-[-7rem]  text-center flex flex-col justify-end z-10 rounded-3xl'>
                                 <div className="stars flex gap-1 justify-center">
                                     <FaStar color='orange' />
                                     <FaStar color='orange' />
@@ -61,8 +60,8 @@ const BestProducts = () => {
                                     <FaStar color='orange' />
                                 </div>
                                 <h5 className='text-xl font-bold group-hover:text-[#fff]'>{item.title}</h5>
-                                <p className='text-sm w-[80%] pb-3 mx-auto text-[#5e6266] group-hover:text-[#fff]'>{item.desc}</p>
-                                <button className='font-bold mb-5 mx-auto px-5 py-1 rounded-3xl bg-[#fea928] text-[#fff] group-hover:text-[#fea928]  group-hover:bg-[#fff]'>Order Now</button>
+                                <p className='text-[14px] w-[80%] pb-3 mx-auto text-[#5e6266] group-hover:text-[#fff]'>{item.desc}</p>
+                                <button className='font-semibold mb-5 mx-auto px-4 py-1 rounded-3xl bg-[#fea928] text-[#fff] group-hover:text-[#fea928]  group-hover:bg-[#fff]'>Order Now</button>
                             </div>
                         </div>
                     ))
