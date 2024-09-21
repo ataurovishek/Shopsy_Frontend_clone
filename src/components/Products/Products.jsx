@@ -17,16 +17,16 @@ const Products = () => {
 
     return (
         <>
-        <Container>
-            <div className="flex flex-col items-center mt-[3rem] text-center">
-              <ProductCardInfo info={ProductCardHeading}/>
-            </div>
-            <ProductsCard />
-            <BestProducts/>
-        </Container>
-        <DiscountProducts/>
+            <Container>
+                <div className="flex flex-col items-center mt-[3rem] text-center">
+                    <ProductCardInfo info={ProductCardHeading} />
+                </div>
+                <ProductsCard />
+                <BestProducts />
+            </Container>
+            <DiscountProducts />
         </>
-        
+
     );
 };
 

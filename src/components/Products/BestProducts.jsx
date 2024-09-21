@@ -52,7 +52,7 @@ const BestProducts = () => {
 
                             <img src={item.img} alt=""  className='z-30 w-[100%] group-hover:scale-[1.05] ease-out duration-300'/>
 
-                            <div className= 'group-hover:bg-[#262525] w-[20rem] h-[17rem] translate-y-[-7rem]  text-center flex flex-col justify-end z-10 rounded-3xl'>
+                            <div className= 'group-hover:bg-[#262525] w-[20rem] h-[17rem] translate-y-[-7rem]  text-center flex flex-col justify-end z-10 rounded-2xl'>
                                 <div className="stars flex gap-1 justify-center">
                                     <FaStar color='orange' />
                                     <FaStar color='orange' />
